@@ -1,0 +1,178 @@
+@import url("utilities.css");
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+
+}
+/* .container {
+    border: 1px solid red;
+}
+.section {
+    border: 1px solid yellow;
+}
+.gift {
+    border: 1px solid green;
+} */
+
+
+body {
+    background: var(--background);
+    background: linear-gradient(black,rgb(92, 2, 95));
+    color: var(--text-color);
+    text-shadow: var(--text-shadow);
+    font-family: 'Happy Monkey', cursive;
+}
+/* display */
+.container {
+    padding: 2em;
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+    gap: 1em; /* or 2em between each section */
+    width: 90%;
+    margin: 0 auto;
+}
+.header {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: .5em;
+}
+.gift:nth-child(odd) span {
+    color: pink;
+}
+.gift:nth-child(even) span {
+    color: rgb(7, 219, 239);
+}
+.gift .gift-header {
+    transition: all 6.5s ease-out;
+}
+.gift .gift-header:hover {
+    letter-spacing: .3em;
+    
+    
+}
+.gift:nth-child(even) .gift-header:hover {
+    color: pink;
+}
+.gift:nth-child(odd) .gift-header:hover {
+    color: rgb(7, 219, 239);
+    letter-spacing: .2em;
+}
+.header .image {
+    width: 300px;
+}
+.gift .image {
+    width: 400px;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all 4.5s ease-out;
+    overflow: hidden;
+}
+.gift .image:hover {
+    
+    margin: 4em;
+    transform: scale(1.6);
+    transition: all 2.5s ease-out;
+}
+.gift-1 .image {
+    background-image:url("gift-cover.jpg");
+}
+.gift-1 .image:hover {
+    background-image:url("happy-minons.gif");
+    
+}
+.gift-2 .image {
+    background-image:url("gift-cover.jpg");
+}
+.gift-2 .image:hover {
+    background-image:url("happy.gif");
+}
+.gift-3 .image {
+    background-image:url("gift-cover.jpg");
+    
+}
+.gift-3 .image:hover {
+    background-image:url("flippin-skateboard-awesome.webp");
+}
+.gift-4 .image {
+    background-image:url("gift-cover.jpg");
+}
+.gift-4 .image:hover {
+    background-image:url("clint-make-my-day.gif");
+}
+.gift-5 .image {
+    background-image:url("gift-cover.jpg");
+}
+.gift-5 .image:hover {
+    background-image:url("many-cheering.gif");
+}
+.gift-section {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 2em;
+}
+.gift {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 90%;
+    margin-bottom: 2em;
+    gap: 2em 2em;
+}
+.birthday-details {
+    margin:.5em;
+    display: flex;
+    flex-flow: column;
+    gap: 1em;
+    align-items: center;
+}
+.text-background {
+    background: var(--text-background);
+    padding: .3em;
+}
+.text-background:hover {
+    box-shadow: rgba(0,0,0,.5) 5px 5px 5px;
+    color: var(--text-background);
+    background:var(--text-color);
+    transition: var(--transition-fast);
+}
+.emoji {
+    font-size:  3em;
+    transition: all 3s ease-out;
+}
+.emoji:nth-child(2n) {
+    margin-bottom: .25em;
+}
+.emoji:hover {
+    animation: rotation 2s infinite linear;
+    scale: 3;
+    opacity: .5;
+    padding: .1em;
+    transition: all .5s ease-out;
+    margin:1em;
+}
+.gift-hint {
+    margin-bottom: .6410em;
+}
+.section:nth-child(2n) {
+    margin-top: 1em;
+}
+.footer h2 {
+    font-style: italic;
+}
+a {
+    text-decoration: none;
+    color: var(--text-background);
+}
+a:hover {
+    color: #2cf0f0;
+}
+

@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Happy+Monkey&display=swap');
+:root {
+    --background: rgba(39, 66, 220, 0.984);
+    --text-background: rgb(225, 18, 190);
+    --text-color:  white;
+    --text-shadow: 0 0 1px black;
+    --transition-fast: all .5s ease-out;
+    --transition-slow: all 3s ease-out;
+}
+
+.border{
+    border: solid rgb(252, 155, 236) 3px;
+}
+.gift-border {
+    border: solid var(--text-color) 6px;
+}
+.border-radius-gift {
+    border-radius: .4em;
+}
+.border-radius-square {
+    border-radius: .2em;
+}
+.border-radius-circle {
+    border-radius: 50%;
+}
+.text-background {
+    background: var(--text-background);
+}
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+}
+
+
