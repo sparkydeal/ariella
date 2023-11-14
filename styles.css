@@ -6,7 +6,7 @@
 }
 
 html {
-    font-size: 62.5%;
+    font-size: 100%;
 
 }
 /* .container {
@@ -43,11 +43,15 @@ body {
     align-items: center;
     gap: .5em;
 }
-.gift:nth-child(odd) span {
+.gift:nth-child(odd) .highlight {
     color: pink;
 }
-.gift:nth-child(even) span {
+.gift:nth-child(even) .highlight {
     color: rgb(7, 219, 239);
+}
+span.second-line {
+    display: block;
+
 }
 .gift .gift-header {
     transition: all 6.5s ease-out;
@@ -65,10 +69,11 @@ body {
     letter-spacing: .2em;
 }
 .header .image {
-    width: 300px;
+    width: 100px;
+    height: 100px;
 }
 .gift .image {
-    width: 400px;
+    width: 300px;
     height: 200px;
     background-repeat: no-repeat;
     background-size: cover;
