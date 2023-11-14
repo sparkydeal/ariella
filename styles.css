@@ -93,6 +93,12 @@ span.second-line {
     background-image:url("happy-minons.gif");
     
 }
+.highlight-pink {
+    color: rgb(7, 219, 239);
+}
+.highlight-red {
+    color: red;
+}
 .gift-2 .image {
     background-image:url("gift-cover.jpg");
 }
